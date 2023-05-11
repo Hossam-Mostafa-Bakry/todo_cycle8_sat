@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:todo_cycle8_sat/shared_components/theme/colors.dart';
 
 class MyTheme {
   static ThemeData lightTheme = ThemeData(
     scaffoldBackgroundColor: lightGreenColor,
     appBarTheme: AppBarTheme(
+      centerTitle: false,
       color: primaryColor,
       elevation: 0,
     ),
@@ -22,17 +24,20 @@ class MyTheme {
       ),
     ),
     textTheme: TextTheme(
-      headlineMedium: TextStyle(
-        fontSize: 30,
+      headlineMedium: GoogleFonts.poppins(
         color: Colors.white,
+        fontSize: 22,
+        fontWeight: FontWeight.bold,
       ),
-      bodyMedium: TextStyle(
-        fontSize: 25,
-        color: Colors.white,
+      bodyMedium: GoogleFonts.poppins(
+        color: primaryColor,
+        fontSize: 18,
+        fontWeight: FontWeight.w600,
       ),
-      bodySmall: TextStyle(
-        fontSize: 20,
-        color: Colors.white,
+      bodySmall: GoogleFonts.roboto(
+        color: Colors.black,
+        fontSize: 15,
+        fontWeight: FontWeight.normal,
       ),
     ),
   );
